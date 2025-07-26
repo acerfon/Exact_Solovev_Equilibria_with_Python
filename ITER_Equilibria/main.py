@@ -154,7 +154,7 @@ match eq_type:
         C=np.concatenate((C[0:7],np.zeros((5,1))))
         ysep = -kappa*epsilon
         
-        contour_levels = np.linspace(-0.045,0,20)
+        contour_levels = np.concatenate((np.linspace(-0.09,-0.00000005,40),[0.]))
         
     case "asym_single_null":
         ################################################################################
